@@ -13,7 +13,7 @@ export default function Works() {
   // menus can link straight to it.
   const [params, setParams] = useSearchParams();
   const filter = params.get("industry") ?? "All";
-  const setFilter = (name) => setParams(name === "All" ? {} : { industry: name }, { replace: true, preventScrollReset: true });
+  const setFilter = (name) => setParams(name === "All" ? {} : { industry: name }, { replace: true, state: { keepScroll: true } });
 
   const filters = ["All", ...industries.filter((i) => projects.some((p) => p.industry === i.name)).map((i) => i.name)];
   const stack = HERO_STACK.map((slug) => projects.find((p) => p.slug === slug))

@@ -18,13 +18,21 @@ export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
-  // A new page starts at the top, or at the section its #hash names.
+  // Every link click starts at the top (or at the section its #hash names),
+  // even when only ?industry= changes. Navigations that ask to keep their place
+  // (the Work page's filter buttons) don't move.
   useEffect(() => {
     setMenuOpen(false);
+    if (location.state?.keepScroll) return;
+    // Forget the last page's position: ScrollTrigger would put it back when it
+    // re-measures, and "manual" stops the browser restoring it on Back.
+    ScrollTrigger.clearScrollMemory("manual");
+    // "instant": Bootstrap makes the page scroll smoothly, which would slide
+    // the whole way up from the bottom of the last page.
     const target = location.hash && document.getElementById(location.hash.slice(1));
-    if (target) target.scrollIntoView();
-    else window.scrollTo(0, 0);
-  }, [location.pathname, location.hash]);
+    if (target) target.scrollIntoView({ behavior: "instant" });
+    else window.scrollTo({ top: 0, behavior: "instant" });
+  }, [location.key]);
 
   // Scroll animations measure where things are; re-measure when content loads
   // or images change the page height.
@@ -32,7 +40,13 @@ export default function Layout() {
     let frame;
     const observer = new ResizeObserver(() => {
       cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => ScrollTrigger.refresh());
+      frame = requestAnimationFrame(() => {
+        // refresh() can put back a scroll position from before the last page
+        // change; keep wherever the page actually is.
+        const top = window.scrollY;
+        ScrollTrigger.refresh();
+        window.scrollTo({ top, behavior: "instant" });
+      });
     });
     observer.observe(document.body);
     return () => {
