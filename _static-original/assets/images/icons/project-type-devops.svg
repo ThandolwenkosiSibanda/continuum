@@ -1,0 +1,11 @@
+<svg alt="DevOps" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M71 89C82.598 89 92 79.598 92 68C92 56.402 82.598 47 71 47C59.402 47 50 56.402 50 68C50 79.598 59.402 89 71 89Z" stroke="#F15D27" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M63.4 61.9987L57.1729 67.9247L63.4 73.8506" stroke="#F15D27" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M78.334 61.9987L84.5612 67.9247L78.334 73.8506" stroke="#F15D27" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68.4971 73.8506L73.2325 61.9987" stroke="#F15D27" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90.125 33.625C90.125 37.4219 87.0469 40.5 83.25 40.5H15.875C12.0781 40.5 9 37.4219 9 33.625V19.875C9 16.0781 12.0781 13 15.875 13H83.25C87.0469 13 90.125 16.0781 90.125 19.875V33.625Z" stroke="#F15D27" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83.25 40.5C87.0469 40.5 90.125 43.5781 90.125 47.375M15.875 40.5C12.0781 40.5 9 43.5781 9 47.375V61.125C9 64.9219 12.0781 68 15.875 68H41.5" stroke="#F15D27" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="22.75" cy="26.75" r="3.4375" stroke="#F15D27" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.4375 26.75H76.375" stroke="#F15D27" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="22.75" cy="54.25" r="3.4375" stroke="#F15D27" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

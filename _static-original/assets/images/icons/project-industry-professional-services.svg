@@ -1,0 +1,5 @@
+<svg alt="Professional Services" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M39 30H50H61.0208M39 30V30C39 24.4772 43.4772 20 49 20H50H51.0208C56.5437 20 61.0208 24.4772 61.0208 30V30M39 30H33M61.0208 30H67M33 30H12C10.8954 30 10 30.8955 10 32V57.4922V84.4652C10 85.5697 10.8954 86.4652 12 86.4652H88C89.1046 86.4652 90 85.5697 90 84.4652V57.4922V32C90 30.8955 89.1046 30 88 30H67M33 30V30C33 21.1635 40.1635 14 49 14H50H51C59.8365 14 67 21.1635 67 30V30" stroke="#F15D27" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M84 58H16C12.6863 58 10 55.3137 10 52V32C10 30.8954 10.8954 30 12 30H88C89.1046 30 90 30.8954 90 32V52C90 55.3137 87.3137 58 84 58Z" stroke="#F15D27" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="50" cy="58" r="8" stroke="#F15D27" stroke-width="3"/>
+</svg>

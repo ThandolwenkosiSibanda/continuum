@@ -1,0 +1,9 @@
+# Apache / cPanel: send every address that isn't a real file to index.html,
+# so links like /work/proqit open the React app instead of a 404.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
